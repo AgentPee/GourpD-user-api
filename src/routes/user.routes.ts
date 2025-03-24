@@ -2,7 +2,7 @@ import express from "express";
 import {
   //getUsers,
   //getUserById,
-  //createUser,
+  createUser,
   //updateUser,
   //deleteUser,
 } from "../controllers/user.controllers";
@@ -12,7 +12,7 @@ const router = express.Router();
 
 //router.get("/", getUsers);
 //router.get("/:id", getUserById);
-//router.post("/", validateUser, createUser);
+router.post("/", validateUser, createUser);
 //router.put("/:id", validateUser, updateUser);
 //router.delete("/:id", deleteUser);
 
